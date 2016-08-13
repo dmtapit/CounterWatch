@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 import java.io.BufferedReader;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     static ImageButton[] images = new ImageButton[22];
     Button button;
+    TextView textViewHeroName;
 
     static int imageCounter = 0;
 
@@ -78,9 +80,12 @@ public class MainActivity extends AppCompatActivity {
                     View v = findViewById(graph.getVertex()[k].imageButtonID);
                     v.setVisibility(v.VISIBLE);
                 }
-
+                textViewHeroName.setText("Counters For: sombra");
             }
         });
+        textViewHeroName = (TextView) findViewById((R.id.counterForHeroName));
+
+
         int counter = 0;
         for(int i:BUTTON_IDS){
             images[counter] = (ImageButton) findViewById(i);
@@ -92,6 +97,7 @@ public class MainActivity extends AppCompatActivity {
                     for (int j = 0; j < graph.getSize(); j++) {
                         if (id == graph.getVertex()[j].imageButtonID) {
                             index = j;
+                            textViewHeroName.setText("Counters For: " + graph.getVertex()[j].name);
                         }
                     }
                     for (int k = 0 ; k < graph.getSize(); k++) {
