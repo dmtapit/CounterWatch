@@ -13,111 +13,111 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ana"
-        android:src="@drawable/Icon-ana"/>
+        android:src="@drawable/icon_ana"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/bastion"
-        android:src="@drawable/Icon-bastion"/>
+        android:src="@drawable/icon_bastion"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/dva"
-        android:src="@drawable/Icon-dva"/>
+        android:src="@drawable/icon_bastion"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/genji"
-        android:src="@drawable/Icon-genji"/>
+        android:src="@drawable/icon_genji"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/hanzo"
-        android:src="@drawable/Icon-hanzo"/>
+        android:src="@drawable/icon_hanzo"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/junkrat"
-        android:src="@drawable/Icon-Junkrat"/>
+        android:src="@drawable/icon_junkrat"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/lucio"
-        android:src="@drawable/Icon-Lucio"/>
+        android:src="@drawable/icon_lucio"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/mccree"
-        android:src="@drawable/Icon-mccree"/>
+        android:src="@drawable/icon_mccree"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/mei"
-        android:src="@drawable/Icon-mei"/>
+        android:src="@drawable/icon_mei"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/mercy"
-        android:src="@drawable/Icon-mercy"/>
+        android:src="@drawable/icon_mercy"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/pharah"
-        android:src="@drawable/Icon-pharah" />
+        android:src="@drawable/icon_pharah"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/reaper"
-        android:src="@drawable/Icon-reaper" />
+        android:src="@drawable/icon_reaper"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/reinhardt"
-        android:src="@drawable/Icon-reinhardt" />
+        android:src="@drawable/icon_reinhardt"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/roadhog"
-        android:src="@drawable/Icon-Roadhog" />
+        android:src="@drawable/icon_roadhog" />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/soldier76"
-        android:src="@drawable/Icon-Soldier76" />
+        android:src="@drawable/icon_soldier76"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/symmetra"
-        android:src="@drawable/Icon-symmetra" />
+        android:src="@drawable/icon_symmetra"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/torbjorn"
-        android:src="@drawable/Icon-torbjorn" />
+        android:src="@drawable/icon_torbjorn"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/tracer"
-        android:src="@drawable/Icon-tracer" />
+        android:src="@drawable/icon_tracer" />
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/widowmaker"
-        android:src="@drawable/Icon-widowmaker" />
+        android:src="@drawable/icon_widowmaker"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/winston"
-        android:src="@drawable/Icon-winston" />
+        android:src="@drawable/icon_winston"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/zarya"
-        android:src="@drawable/Icon-zarya" />
+        android:src="@drawable/icon_zarya"/>
     <ImageButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/zenyatta"
-        android:src="@drawable/Icon-zenyatta" />
+        android:src="@drawable/icon_zenyatta"/>
 
 </RelativeLayout>
