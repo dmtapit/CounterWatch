@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Link> links = new ArrayList<>();
 
     static ImageButton[] images = new ImageButton[22];
+    Button button;
 
     static int imageCounter = 0;
 
@@ -67,6 +69,18 @@ public class MainActivity extends AppCompatActivity {
         for(int i = 0;i<links.size();i++)
             graph.addEdge(links.get(i).getSource(),links.get(i).getTarget(),links.get(i).getWeight());
 
+
+        button = (Button) findViewById(R.id.reset);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                for (int k = 0 ; k < graph.getSize(); k++) {
+                    View v = findViewById(graph.getVertex()[k].imageButtonID);
+                    v.setVisibility(v.VISIBLE);
+                }
+
+            }
+        });
         int counter = 0;
         for(int i:BUTTON_IDS){
             images[counter] = (ImageButton) findViewById(i);
@@ -85,6 +99,9 @@ public class MainActivity extends AppCompatActivity {
                             // Set button invisible
                             View v = findViewById(graph.getVertex()[k].imageButtonID);
                             v.setVisibility(v.GONE);
+                        }else{
+                            View v = findViewById(graph.getVertex()[k].imageButtonID);
+                            v.setVisibility(v.VISIBLE);
                         }
                     }
                 }
