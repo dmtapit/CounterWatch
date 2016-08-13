@@ -4,6 +4,7 @@ package com.archer.counterwatch;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ImageButton;
 
 
 import java.io.BufferedReader;
@@ -19,6 +20,33 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Hero> heroes = new ArrayList<>();
     ArrayList<Link> links = new ArrayList<>();
 
+    ImageButton[] images = new ImageButton[22];
+
+    private static final int[] BUTTON_IDS = {
+            R.id.ana,
+            R.id.bastion,
+            R.id.dva,
+            R.id.genji,
+            R.id.hanzo,
+            R.id.junkrat,
+            R.id.lucio,
+            R.id.mccree,
+            R.id.mei,
+            R.id.mercy,
+            R.id.pharah,
+            R.id.reaper,
+            R.id.reinhardt,
+            R.id.roadhog,
+            R.id.soldier76,
+            R.id.symmetra,
+            R.id.torbjorn,
+            R.id.tracer,
+            R.id.widowmaker,
+            R.id.winston,
+            R.id.zarya,
+            R.id.zenyatta,
+    };
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +58,19 @@ public class MainActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
+        //put heroes and links to graph
         Graph graph = new Graph(heroes.size());
         for(int i = 0;i<heroes.size();i++)
-        {
             graph.vertexSet(i,heroes.get(i));
-        }
         for(int i = 0;i<links.size();i++)
-        {
             graph.addEdge(links.get(i).getSource(),links.get(i).getTarget(),links.get(i).getWeight());
+
+        int counter =0;
+        for(int i:BUTTON_IDS){
+            images[counter] = (ImageButton) findViewById(i);
+            counter++;
         }
+
 
     }
     public void readHeroFile(ArrayList obj) throws IOException {
