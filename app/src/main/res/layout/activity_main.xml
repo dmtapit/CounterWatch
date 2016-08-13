@@ -8,9 +8,6 @@
     android:id="@+id/scrollView"
     android:fillViewport="false">
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -23,280 +20,224 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:layout_height="match_parent">
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Reset"
                 android:id="@+id/reset"
-                android:layout_column="1" />
+                android:layout_column="0" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Counters For: sombra"
                 android:id="@+id/counterForHeroName"
-                android:layout_column="3" />
+                android:layout_column="2" />
 
         </TableRow>
         <TableRow
-            android:layout_weight="1"
-            android:gravity="center">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageButton
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:id="@+id/ana"
-                android:src="@drawable/icon_ana"
-                android:scaleType="fitCenter"
-                android:adjustViewBounds="true"
-                android:layout_column="1" />
+                android:src="@drawable/icon_ana"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/bastion"
                 android:src="@drawable/icon_bastion"
-                android:layout_column="3" />
-
-            <ImageButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/dva"
-                android:src="@drawable/icon_dva"
-                android:layout_column="4" />
+                android:layout_column="2" />
 
         </TableRow>
 
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/dva"
+                android:src="@drawable/icon_dva"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/genji"
                 android:src="@drawable/icon_genji"
-                android:layout_column="1" />
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/hanzo"
-                android:src="@drawable/icon_hanzo"
-                android:layout_column="3" />
+                android:src="@drawable/icon_hanzo"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/junkrat"
                 android:src="@drawable/icon_junkrat"
-                android:layout_column="4" />
-
+                android:layout_column="2" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/lucio"
-                android:src="@drawable/icon_lucio"
-                android:layout_column="1" />
+                android:src="@drawable/icon_lucio"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/mccree"
                 android:src="@drawable/icon_mccree"
-                android:layout_column="3" />
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/mei"
                 android:src="@drawable/icon_mei"
-                android:layout_column="4" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
+                android:layout_column="0" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/mercy"
                 android:src="@drawable/icon_mercy"
-                android:layout_column="1" />
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/pharah"
-                android:src="@drawable/icon_pharah"
-                android:layout_column="3" />
+                android:src="@drawable/icon_pharah"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/reaper"
                 android:src="@drawable/icon_reaper"
-                android:layout_column="4" />
-
+                android:layout_column="2" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/reinhardt"
-                android:src="@drawable/icon_reinhardt"
-                android:layout_column="1" />
+                android:src="@drawable/icon_reinhardt"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/roadhog"
                 android:src="@drawable/icon_roadhog"
-                android:layout_column="3" />
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/soldier76"
-                android:src="@drawable/icon_soldier76"
-                android:layout_column="4" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
+                android:src="@drawable/icon_soldier76"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/symmetra"
                 android:src="@drawable/icon_symmetra"
-                android:layout_column="1" />
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/torbjorn"
-                android:src="@drawable/icon_torbjorn"
-                android:layout_column="3" />
+                android:src="@drawable/icon_torbjorn"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tracer"
                 android:src="@drawable/icon_tracer"
-                android:layout_column="4" />
-
+                android:layout_column="2" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/widowmaker"
-                android:src="@drawable/icon_widowmaker"
-                android:layout_column="1" />
+                android:src="@drawable/icon_widowmaker"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/winston"
                 android:src="@drawable/icon_winston"
-                android:layout_column="3" />
+                android:layout_column="2" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/zarya"
-                android:src="@drawable/icon_zarya"
-                android:layout_column="4" />
-
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center">
+                android:src="@drawable/icon_zarya"/>
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/zenyatta"
                 android:src="@drawable/icon_zenyatta"
-                android:layout_column="1" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView"
-                android:layout_column="1" />
-
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/imageView2"
-                android:layout_column="4" />
+                android:layout_column="2" />
         </TableRow>
 
     </TableLayout>
-    </LinearLayout>
 
 </ScrollView>
