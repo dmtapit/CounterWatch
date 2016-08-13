@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Link> links = new ArrayList<>();
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             if(line.equals(""))     //if empty line, get out of the loop
                 break;
             Hero newHero = getHeroInfo(line);   //create a new city by extracting info from theline
-            obj.add(newHero);   //add the city to the arraylist
+            obj.add(newHero);   //add the hero to the arraylist
         }
         inputFile.close();
     }
@@ -70,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
             if(line.equals(""))     //if empty line, get out of the loop
                 break;
             Link newLink = getLinkInfo(line);   //create a new city by extracting info from theline
-            obj.add(newLink);   //add the city to the arraylist
+            obj.add(newLink);   //add the link to the arraylist
         }
         inputFile.close();
     }
