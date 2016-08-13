@@ -27,6 +27,9 @@ public class Graph {
         if(weight == -1)
             edges[source][target] = weight;
     }
+    public int[][] getEdges() {
+        return edges;
+    }
 
     public Hero[] getVertex() {
         return vertex;

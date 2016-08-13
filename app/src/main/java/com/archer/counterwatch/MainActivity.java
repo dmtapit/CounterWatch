@@ -4,6 +4,7 @@ package com.archer.counterwatch;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageButton;
 
 
@@ -20,7 +21,9 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<Hero> heroes = new ArrayList<>();
     ArrayList<Link> links = new ArrayList<>();
 
-    ImageButton[] images = new ImageButton[22];
+    static ImageButton[] images = new ImageButton[22];
+
+    static int imageCounter = 0;
 
     private static final int[] BUTTON_IDS = {
             R.id.ana,
@@ -47,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
             R.id.zenyatta,
     };
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,18 +61,36 @@ public class MainActivity extends AppCompatActivity {
             e.printStackTrace();
         }
         //put heroes and links to graph
-        Graph graph = new Graph(heroes.size());
+        final Graph graph = new Graph(heroes.size());
         for(int i = 0;i<heroes.size();i++)
             graph.vertexSet(i,heroes.get(i));
         for(int i = 0;i<links.size();i++)
             graph.addEdge(links.get(i).getSource(),links.get(i).getTarget(),links.get(i).getWeight());
 
-        int counter =0;
+        int counter = 0;
         for(int i:BUTTON_IDS){
             images[counter] = (ImageButton) findViewById(i);
+            images[counter].setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                   int id = view.getId();
+                    int index = 999;
+                    for (int j = 0; j < graph.getSize(); j++) {
+                        if (id == graph.getVertex()[j].imageButtonID) {
+                            index = j;
+                        }
+                    }
+                    for (int k = 0 ; k < graph.getSize(); k++) {
+                        if (graph.getEdges()[index][k] == 0) {
+                            // Set button invisible
+                            View v = findViewById(graph.getVertex()[k].imageButtonID);
+                            v.setVisibility(v.GONE);
+                        }
+                    }
+                }
+            });
             counter++;
         }
-
 
     }
     public void readHeroFile(ArrayList obj) throws IOException {
@@ -127,7 +147,8 @@ public class MainActivity extends AppCompatActivity {
         String[] parts = line.split("-");
         int number = Integer.parseInt(parts[0]);
         String name = parts[1];
-        return new Hero(number,name); //return a new Hero
+
+        return new Hero(number,name,BUTTON_IDS[imageCounter++]); //return a new Hero
     }
     public static Link getLinkInfo(String line)
     {
